@@ -1,0 +1,10 @@
+.workout__app-link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+@include breakpoint('.workout__app-link', 480px) {
+    font-size: 14px;
+    line-height: 20px;
+}

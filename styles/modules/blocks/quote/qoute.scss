@@ -1,0 +1,24 @@
+.quote {
+    padding: 119px $wideOffset 0;
+    display: flex;
+    background-color: $backgroundColor;
+    @include centered();
+}
+
+@include breakpoint('.quote', 1400px) {
+    padding: 119px $mediumOffset 0;
+}
+
+@include breakpoint('.quote', 790px) {
+    flex-direction: column;
+    padding: 40px $mediumOffset 80px;
+    position: relative;
+}
+
+@include topDividor('.quote', $mediumOffset, #E3E3E3, 790px);
+
+@include breakpoint('.quote', 480px) {
+    padding: 22px $smallOffset 77px;
+}
+
+@include topDividor('.quote', $smallOffset, #E3E3E3, 480px);

@@ -1,0 +1,13 @@
+.hero__text {
+    max-width: 460px;
+    padding-bottom: 53px;
+}
+
+@include breakpoint('.hero__text', 990px) {
+    max-width: 300px;
+}
+
+@include breakpoint('.hero__text', 860px) {
+    max-width: 400px;
+    padding: 39px 0 41px;
+}

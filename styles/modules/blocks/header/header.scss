@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    @include centered();
+    padding: 28px $wideOffset;
+    background-color: $backgroundColor;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+@include breakpoint('.header', 1400px) {
+    padding: 28px $mediumOffset;
+}
+
+@include breakpoint('.header', 860px) {
+    padding: 25px $mediumOffset 30px;
+}
+
+@include breakpoint('.header', 480px) {
+    padding: 24px $smallOffset 30px;
+}

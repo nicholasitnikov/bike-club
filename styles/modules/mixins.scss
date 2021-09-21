@@ -1,0 +1,32 @@
+@mixin centered() {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@mixin breakpoint($selector, $width) {
+    @media screen and (max-width: #{$width}) {
+        #{$selector} {
+            @content;
+        }
+    }
+}
+
+@mixin darkBackground {
+    transition: all .3s;
+    background-color: $backgroundColorDark;
+}
+
+@mixin topDividor($class, $offset, $color, $width) {
+    @media screen and (max-width: #{$width}) {
+        #{$class}::before {
+            height: 1px;
+            background: $color;
+            top: 0;
+            left: $offset;
+            right: $offset;
+            content: '';
+            position: absolute;
+        }
+    }
+}

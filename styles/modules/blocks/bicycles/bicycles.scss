@@ -1,0 +1,31 @@
+.bicycles {
+    padding: 123px $wideOffset 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $backgroundColor;
+    @include centered();
+}
+
+@include breakpoint('.bicycles', 1400px) {
+    padding: 123px $mediumOffset 0;
+}
+
+@include breakpoint('.bicycles', 790px) {
+    position: relative;
+    padding: 40px $mediumOffset 80px;
+}
+
+@include topDividor('.bicycles', $mediumOffset, #E3E3E3, 790px);
+
+@include breakpoint('.bicycles', 749px) {
+    position: relative;
+    padding: 40px $mediumOffset 102px;
+}
+
+@include breakpoint('.bicycles', 480px) {
+    padding: 41px $smallOffset 102px;
+}
+
+@include topDividor('.bicycles', $smallOffset, #E3E3E3, 480px);

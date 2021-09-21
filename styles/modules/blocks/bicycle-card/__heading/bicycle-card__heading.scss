@@ -1,0 +1,21 @@
+.bicycle-card__heading {
+    font-family: $defaultFont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 22px 0 0 6px;
+    margin: 0;
+    color: #151515;
+}
+
+@include breakpoint('.bicycle-card__heading', 749px) {
+    padding: 3px 0 16px 0;
+    text-align: center;
+}
+
+@include breakpoint('.bicycle-card__heading', 480px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 0 17px;
+}

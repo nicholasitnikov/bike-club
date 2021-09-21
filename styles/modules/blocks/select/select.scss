@@ -1,0 +1,33 @@
+.select {
+    font-family: $defaultFont;
+    color: #151515;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 32px 8px 12px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #E3E3E3;
+    border-radius: 2px;
+    background: url('../images/select-arrow.svg');
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) 13px;
+    outline: none;
+}
+
+.select::-ms-expand {
+    display: none;
+}
+
+@include breakpoint ('.select', 480px) {
+    width: 114px;
+    border: 1px solid #e3e3e3;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 7px 32px 7px 11px;
+    background-size: 12px 10px;
+    background-position: calc(100% - 10px) 10px;
+}

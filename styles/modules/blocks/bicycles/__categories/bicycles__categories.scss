@@ -1,0 +1,9 @@
+.bicycles__categories {
+    display: flex;
+    padding-top: 19px;
+    margin: 0;
+}
+
+@include breakpoint('.bicycles__categories', 780px) {
+    display: none;
+}

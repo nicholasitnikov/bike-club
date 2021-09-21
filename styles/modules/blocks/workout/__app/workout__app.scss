@@ -1,0 +1,12 @@
+.workout__app {
+    list-style: none;
+    padding-left: 29px;
+}
+
+.workout__app:first-of-type {
+    padding-left: 0;
+}
+
+@include breakpoint('.workout__app', 480px) {
+    padding-left: 31px;
+}

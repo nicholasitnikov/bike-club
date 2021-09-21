@@ -1,0 +1,7 @@
+.subscribe-form {
+    padding: 49px 0 100px;
+}
+
+@include breakpoint('.subscribe-form', 480px) {
+    padding: 39px 0 62px;
+}

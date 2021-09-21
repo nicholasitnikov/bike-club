@@ -1,0 +1,22 @@
+.heading {
+    font-family: $defaultFont;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: $primaryColor;
+    margin: 0;
+    padding: 0;
+}
+
+@include breakpoint ('.heading', 780px) {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+@include breakpoint ('.heading', 380px) {
+    font-size: 32px;
+    line-height: 40px;
+}

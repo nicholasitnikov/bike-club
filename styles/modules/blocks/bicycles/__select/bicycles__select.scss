@@ -1,0 +1,7 @@
+.bicycles__select {
+    display: none;
+}
+
+@include breakpoint('.bicycles__select', 790px) {
+    display: block;
+}

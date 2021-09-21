@@ -1,0 +1,12 @@
+.slider__item {
+    height: 400px;
+    background-image: url('../images/slide-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+@include breakpoint('.slider__item', 480px) {
+    height: 175px;
+}

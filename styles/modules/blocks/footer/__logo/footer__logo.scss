@@ -1,0 +1,9 @@
+.footer__logo {
+    width: 33px;
+    height: 33px;
+    display: none;
+}
+
+@include breakpoint('.footer__logo', 860px) {
+    display: block;
+}

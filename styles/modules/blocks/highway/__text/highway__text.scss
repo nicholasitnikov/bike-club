@@ -1,0 +1,7 @@
+.highway__text {
+    max-width: 460px;
+}
+
+@include breakpoint('.highway__text', 790px) {
+    order: 4;
+}

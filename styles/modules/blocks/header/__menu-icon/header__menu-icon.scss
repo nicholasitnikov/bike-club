@@ -1,0 +1,9 @@
+.header__menu-icon {
+    width: 22px;
+    height: 22px;
+    display: none;
+}
+
+@include breakpoint('.header__menu-icon', 860px) {
+    display: inherit;
+}

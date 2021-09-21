@@ -1,0 +1,20 @@
+.quote__heading {
+    max-width: 470px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+}
+
+@include breakpoint('.quote__heading', 790px) {
+    padding-bottom: 40px;
+}
+
+@include breakpoint ('.quote__heading', 480px) {
+    padding-bottom: 9px;
+}
+
+@include breakpoint ('.quote__heading', 440px) {
+    font-size: 23px;
+    line-height: 29px;
+}

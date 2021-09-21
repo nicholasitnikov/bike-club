@@ -1,0 +1,13 @@
+.slider__arrow_theme_dark {
+    background-color: rgba(67, 67, 67, 1);
+    transition: all .3s;
+}
+
+.slider__arrow_theme_dark::before {
+    filter: invert(100%);
+    transition: all .3s;
+}
+
+.slider__arrow_theme_dark:hover {
+    opacity: .6;
+}

@@ -1,0 +1,8 @@
+.header__list {
+    display: flex;
+    margin: 0;
+}
+
+@include breakpoint('.header__list', 860px) {
+    display: none;
+}

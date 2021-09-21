@@ -1,0 +1,19 @@
+.slider__item_featured::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 16px;
+    width: 100px;
+    height: 40px;
+    background-image: url('../images/slide-featured.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@include breakpoint('.slider__item_featured::after', 480px) {
+    bottom: 14px;
+    width: 70px;
+    height: 28px;
+}

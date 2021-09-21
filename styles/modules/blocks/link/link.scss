@@ -1,0 +1,16 @@
+.link {
+    font-family: $defaultFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: $primaryColor;
+    transition: opacity .3s;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link:hover {
+    opacity: .75;
+}

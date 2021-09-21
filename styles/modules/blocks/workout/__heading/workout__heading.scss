@@ -1,0 +1,8 @@
+.workout__heading {
+    max-width: 460px;
+    padding-top: 3px;
+}
+
+@include breakpoint('.workout__heading', 840px) {
+    padding-bottom: 40px;
+}

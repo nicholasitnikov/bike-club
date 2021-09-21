@@ -1,0 +1,23 @@
+.hero {
+    padding: 20px 0 0px $wideOffset;
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundColor;
+    @include centered();
+}
+
+@include breakpoint('.hero', 1400px) {
+    padding: 20px 0 ($mediumOffset - 1) 60px;
+}
+
+@include breakpoint('.hero', 860px) {
+    padding: 40px 0 $mediumOffset 60px;
+}
+
+@include breakpoint('.hero', 520px) {
+    padding: 40px 60px $mediumOffset 60px;
+}
+
+@include breakpoint('.hero', 480px) {
+    padding: 40px $smallOffset 79px $smallOffset;
+}

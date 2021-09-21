@@ -1,0 +1,11 @@
+.workout__text {
+    max-width: 460px;
+    padding-top: 44px;
+    padding-right: 20px;
+}
+
+@include breakpoint('.workout__text', 480px) {
+    width: 100%;
+    padding-top: 35px;
+    padding-right: 0;
+}

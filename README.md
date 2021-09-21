@@ -5,3 +5,5 @@
 ## Bike Club
 
 В проекте использованы следующие технологии: SCSS, Flexbox, Grid, JS, BEM
+
+Ссылка на проект: (https://nicholasitnikov.github.io/bike-club/)

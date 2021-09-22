@@ -6,6 +6,7 @@
 @import './modules/mixins.scss';
 
 @import './modules/blocks/root/root.scss';
+@import './modules/blocks/root/_theme/root_theme_dark.scss';
 @import './modules/blocks/content/content.scss';
 
 // ui
@@ -18,7 +19,9 @@
 
 @import './modules/blocks/slider/slider.scss';
 @import './modules/blocks/slider/__item/slider__item.scss';
-@import './modules/blocks/slider/__item/_featured/slider__item_featured.scss';  
+@import './modules/blocks/slider/__item/_icon/slider__item_icon_highway.scss';
+@import './modules/blocks/slider/__item/_icon/slider__item_icon_tt.scss';
+@import './modules/blocks/slider/__item/_icon/slider__item_icon_warmed.scss';
 @import './modules/blocks/slider/__arrows/slider__arrows.scss';
 @import './modules/blocks/slider/__arrow/slider__arrow.scss';
 @import './modules/blocks/slider/__arrow/_theme/slider__arrow_theme_dark.scss';
@@ -53,7 +56,6 @@
 @import './modules/blocks/hero/__info/hero__info.scss';
 @import './modules/blocks/hero/__caption/hero__caption.scss';
 @import './modules/blocks/hero/__caption/_theme/hero__caption_theme_dark.scss';
-@import './modules/blocks/hero/__link/hero__link.scss';
 @import './modules/blocks/hero/__images/hero__images.scss';
 @import './modules/blocks/hero/__image/hero__image.scss';
 @import './modules/blocks/hero/__background/hero__background.scss';

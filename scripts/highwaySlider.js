@@ -3,17 +3,20 @@ const slides = [
         image: './images/slide-1.jpg',
         heading: 'Шоссе',
         text: 'На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.',
-        featured: true
+        featured: true,
+        icon: 'highway'
     },
     {
         image: './images/slide-2.jpg',
         heading: 'Грэвел',
-        text: 'Грэвел похож на&nbsp;шоссейный велосипед, но&nbsp;конструкция рамы немного отличается, и&nbsp;на&nbsp;нём стоят более широкие покрышки, всё для того чтобы проехать по&nbsp;лёгкому бездорожью.'
+        text: 'Грэвел похож на&nbsp;шоссейный велосипед, но&nbsp;конструкция рамы немного отличается, и&nbsp;на&nbsp;нём стоят более широкие покрышки, всё для того чтобы проехать по&nbsp;лёгкому бездорожью.',
+        icon: 'warmed'
     },
     {
         image: './images/slide-3.jpg',
         heading: 'TT',
-        text: 'ТТ&nbsp;&mdash; это велосипед для триатлона или раздельного старта, гооняют на&nbsp;таком велике только по&nbsp;равнинному асфальту, велик очень быстрые и&nbsp;аэродинамичный.'
+        text: 'ТТ&nbsp;&mdash; это велосипед для триатлона или раздельного старта, гооняют на&nbsp;таком велике только по&nbsp;равнинному асфальту, велик очень быстрые и&nbsp;аэродинамичный.',
+        icon: 'tt'
     }
 ]
 
@@ -36,9 +39,7 @@ slides.forEach((el) => {
     const element = document.createElement('div');
     element.classList.add('swiper-slide');
     element.classList.add('slider__item')
-    if(el.featured) {
-        element.classList.add('slider__item_featured');
-    }
+    element.classList.add(`slider__item_icon_${el.icon}`);
     element.style.backgroundImage = `url(${el.image})`;
     sliderWrapper.append(element);
 })

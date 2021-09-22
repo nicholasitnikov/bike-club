@@ -9,8 +9,12 @@
     pointer-events: none;
     z-index: 3;
     display: grid;
-    padding: 18px 13px 38px;
+    padding: 18px $mediumOffset 38px;
     box-sizing: border-box;
     grid-template-rows: 128px 1fr 100px;
     transition: left .3s;
+}
+
+@include breakpoint('.menu', 480px) {
+    padding: 18px 13px 38px;
 }

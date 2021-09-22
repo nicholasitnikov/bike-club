@@ -1,5 +1,6 @@
 .content {
     padding-top: 74px;
+    width: 100%;
 }
 
 @include breakpoint('content', 860px) {
@@ -9,15 +10,3 @@
 @include breakpoint('content', 480px) {
     padding-top: 66px;
 }
-
-// @include breakpoint('.header', 1400px) {
-//     padding: 28px $mediumOffset;
-// }
-
-// @include breakpoint('.header', 860px) {
-//     padding: 25px $mediumOffset 30px;
-// }
-
-// @include breakpoint('.header', 480px) {
-//     padding: 24px $smallOffset 30px;
-// }

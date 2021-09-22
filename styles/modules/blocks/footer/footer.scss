@@ -2,6 +2,7 @@
     padding: 80px $wideOffset 60px;
     background-color: #EFEFEF;
     @include centered();
+    width: 100%;
 }
 
 @include breakpoint('.footer', 1400px) {

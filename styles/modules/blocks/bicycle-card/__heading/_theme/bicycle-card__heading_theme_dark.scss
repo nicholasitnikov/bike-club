@@ -3,6 +3,6 @@
     transition: all .3s;
 }
 
-@include breakpoint('.bicycle-card__heading_theme_dark', 480px) {
+@include breakpoint('.bicycle-card__heading_theme_dark', 749px) {
     color: #151515;
 }

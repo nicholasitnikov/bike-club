@@ -27,7 +27,8 @@ const darkElements = [
     'menu',
     'menu__link',
     'menu__close',
-    'footer__logo'
+    'footer__logo',
+    'root'
 ]
 
 document.querySelectorAll('.switcher').forEach((el) => {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Шоссе, ТТ и Грэвел — Road Club</title>
 </head> 
-<body class='root'>
+<body class="root">
     <header class="header">
         <nav>
             <ul class="header__list">
@@ -22,14 +22,14 @@
                 </li>
             </ul>
         </nav>
-        <img src="./images/burger.svg" class="header__menu-icon" />
+        <img src="./images/burger.svg" class="header__menu-icon" alt="Кнопка мобильного меню" />
     </header>
     <main class="content">
         <section class="hero">
             <div class="hero__info">
                 <h1 class="heading hero__heading">Шоссе, ТТ и&nbsp;Грэвел</h1>
                 <p class="paragraph hero__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
-                <a href="" class="hero__link"><button type="button" class="button hero__button">Подробнее</button></a>
+                <button type="button" class="button hero__button">Подробнее</button>
                 <span class="hero__caption">Cannondale Systemsix</span>
             </div>
             <div class="hero__images">
@@ -37,7 +37,7 @@
             </div>
         </section>
         <section class="quote">
-            <img src="./images/quote__image.jpg" alt="" class="quote__image" />
+            <img src="./images/quote__image.jpg" alt="Красный дом в горах" class="quote__image" />
             <div class="quote__info">
                 <h2 class="heading quote__heading">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</h2>
                 <div class="quote__author">
@@ -54,7 +54,7 @@
                 <div class="swiper-wrapper"></div>
             </div>
 
-            <div class="slider__arrows highway__arrows">
+            <div class="highway__arrows">
                 <button type="button" class="slider__arrow slider__arrow_direction_left"></button>
                 <button type="button" class="slider__arrow slider__arrow_direction_right"></button>
             </div>
@@ -83,7 +83,7 @@
                     </li>
                 </ul>
             </div>
-            <img src="./images/workout.jpg" alt="" class="workout__image" />
+            <img src="./images/workout.jpg" class="workout__image" alt="Тренировка" />
         </section>
     </main>
     <footer class="footer">
@@ -95,11 +95,11 @@
         <div class="footer__info">
             <p class="footer__copyright">&copy;&nbsp;Road Club 2021</p>
             <button class="switcher footer__switcher"></button>
-            <img class="footer__logo" src="./images/logo.svg" />
+            <img class="footer__logo" src="./images/logo.svg" alt="Логотип" />
         </div>
     </footer>
     <nav class="menu">
-        <img class="menu__close" src="./images/menu-close.svg" />
+        <button type="button" class="menu__close"></button>
         <ul class="menu__list">
             <li class="menu__list-item">
                 <a href="#highway" class="link menu__link">Покрытия и градиенты</a>
@@ -113,22 +113,22 @@
         </ul>
         <button class="switcher menu__switcher"></button>
     </nav>
-    <template id='bicycleTemplate'>
+    <template id="bicycleTemplate">
         <article class="bicycle-card">
             <a target="_blank" class="link bicycle-card__link">
-                <div style="background-image: url('../images/bicycle-3.jpg')" class="bicycle-card__image"></div>
-                <h3 class="bicycle-card__heading">Trek Domane SL-7</h3>
+                <div class="bicycle-card__image"></div>
+                <h3 class="bicycle-card__heading"></h3>
             </a>
         </article>
     </template>
     
     <script src="./vendor/swiper-bundle.min.js"></script>
-    <script src="./scripts/highwaySlider.js"></script>
     <script src="./scripts/bicycles.js"></script>
-    <script src="./scripts/subscribeForm.js"></script>
-    <script src="./scripts/darkTheme.js"></script>
     <script src="./scripts/hero.js"></script>
-    <script src="./scripts/workout.js"></script>
     <script src="./scripts/menu.js"></script>
+    <script src="./scripts/subscribeForm.js"></script>
+    <script src="./scripts/workout.js"></script>
+    <script src="./scripts/highwaySlider.js"></script>
+    <script src="./scripts/darkTheme.js"></script>
 </body>
 </html>

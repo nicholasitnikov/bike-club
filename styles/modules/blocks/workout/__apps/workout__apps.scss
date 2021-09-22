@@ -1,0 +1,9 @@
+.workout__apps {
+    padding: 182px 0 0 0;
+    display: flex;
+    margin: 0;
+}
+
+@include breakpoint('.workout__apps', 840px) {
+    padding-top: 40px;
+}

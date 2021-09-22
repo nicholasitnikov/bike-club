@@ -1,0 +1,9 @@
+.slider {
+    width: calc(100% + 20px);
+    overflow: hidden;
+    padding-top: 55px;
+}
+
+@include breakpoint('.slider', 790px) {
+    width: 100%;
+}

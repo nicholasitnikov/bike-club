@@ -1,0 +1,40 @@
+.bicycle-card__image {
+    width: 380px;
+    height: 380px;
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+    background-image: url('../images/bicycle-1.jpg');
+    background-size: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $backgroundColor;
+    border-radius: 20px;
+    transition: filter .3s;
+}
+
+.bicycle-card__image:hover {
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.11));
+}
+
+@include breakpoint('.bicycle-card__image', 1439px) {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    background-size: 90%;
+}
+
+@include breakpoint('.bicycle-card__image', 749px) {
+    filter: none;
+    background-color: transparent;
+}
+
+@include breakpoint('.bicycle-card__image:hover', 749px) {
+    filter: none;
+    background-color: transparent;
+    background-size: calc(100%-30px);
+}
+
+@include breakpoint('.bicycle-card__image', 480px) {
+    padding-bottom: calc(100% - 20px);
+    width: 100%;
+    background-position: center 14px;
+}

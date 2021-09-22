@@ -1,0 +1,19 @@
+.quote__image {
+    width: 650px;
+    height: 460px;
+    margin-top: 1px;
+}
+
+@include breakpoint('.quote__image', 1400px) {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+@include breakpoint('.quote__image', 790px) {
+    width: 80%;
+}
+
+@include breakpoint('.quote__image', 480px) {
+    width: 100%;
+}

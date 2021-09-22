@@ -1,0 +1,20 @@
+.highway__arrows {
+    padding-top: 50px;
+    position: relative;
+    left: -2px;
+    display: flex;
+    width: 124px;
+    justify-content: space-between;
+}
+
+@include breakpoint('.highway__arrows', 790px) {
+    padding-top: 0;
+    order: 2;
+}
+
+@include breakpoint('.highway__arrows', 480px) {
+    width: 58px;
+    align-self: center;
+    left: 0;
+}
+

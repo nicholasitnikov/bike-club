@@ -1,0 +1,12 @@
+.content {
+    padding-top: 74px;
+    width: 100%;
+}
+
+@include breakpoint('content', 860px) {
+    padding-top: 68px;
+}
+
+@include breakpoint('content', 480px) {
+    padding-top: 66px;
+}

@@ -1,0 +1,18 @@
+.footer {
+    padding: 80px $wideOffset 60px;
+    background-color: #EFEFEF;
+    @include centered();
+    width: 100%;
+}
+
+@include breakpoint('.footer', 1400px) {
+    padding: 80px $mediumOffset 60px;
+}
+
+@include breakpoint('.footer', 790px) {
+    padding: 60px $mediumOffset 40px;
+}
+
+@include breakpoint('.footer', 480px) {
+    padding: 62px $smallOffset 16px;
+}

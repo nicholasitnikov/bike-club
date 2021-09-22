@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Шоссе, ТТ и Грэвел — Road Club</title>
+</head> 
+<body class="root">
+    <header class="header">
+        <nav>
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#highway" class="link header__link">Покрытия и градиенты</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#bicycles" class="link header__link">Велосипеды</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#workout" class="link header__link">Тренировки</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="./images/burger.svg" class="header__menu-icon" alt="Кнопка мобильного меню" />
+    </header>
+    <main class="content">
+        <section class="hero">
+            <div class="hero__info">
+                <h1 class="heading hero__heading">Шоссе, ТТ и&nbsp;Грэвел</h1>
+                <p class="paragraph hero__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+                <button type="button" class="button hero__button">Подробнее</button>
+                <span class="hero__caption">Cannondale Systemsix</span>
+            </div>
+            <div class="hero__images">
+                <div class="hero__image"></div>
+            </div>
+        </section>
+        <section class="quote">
+            <img src="./images/quote__image.jpg" alt="Красный дом в горах" class="quote__image" />
+            <div class="quote__info">
+                <h2 class="heading quote__heading">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;</h2>
+                <div class="quote__author">
+                    <p class="quote__author-name">Эдди Меркс</p>
+                    <span class="quote__author-sport">Велогонщик</span>
+                </div>
+            </div>
+        </section>
+        <section class="highway" id="highway">
+            <h2 class="heading highway__heading">Шоссе</h2>
+            <p class="paragraph highway__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
+            
+            <div class="slider highway__slider">
+                <div class="swiper-wrapper"></div>
+            </div>
+
+            <div class="highway__arrows">
+                <button type="button" class="slider__arrow slider__arrow_direction_left"></button>
+                <button type="button" class="slider__arrow slider__arrow_direction_right"></button>
+            </div>
+        </section>
+        <section class="bicycles" id="bicycles">
+            <h2 class="heading bicycles__heading">Велосипеды</h2>
+            <ul class="bicycles__categories"></ul>
+            <select class="select bicycles__select" name="select"></select>
+            <div class="bicycles__cards">
+            </div>
+            <div class="bicycles__slider">
+                <div class="bicycles__cards-wrapper swiper-wrapper"></div>
+                <div class="swiper-pagination bicycles__pagination"></div>
+            </div>
+        </section>
+        <section class="workout" id="workout">
+            <div class="workout__info">
+                <h2 class="heading workout__heading">Тренировки</h2>
+                <p class="paragraph workout__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+                <ul class="workout__apps">
+                    <li class="workout__app">
+                        <a target="_blank" href="https://www.strava.com" class="link workout__app-link">Strava</a>
+                    </li>
+                    <li class="workout__app">
+                        <a target="_blank" href="https://www.komoot.com" class="link workout__app-link">Komoot</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="./images/workout.jpg" class="workout__image" alt="Тренировка" />
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="heading footer__heading">Подпишитесь на&nbsp;рассылку &mdash;</h3>
+        <form action="#" name="homeSubscribeForm" class="subscribe-form">
+            <input type="text" class="subscribe-form__input" placeholder="Ваш e-mail" name="email" autocomplete="off" required />
+            <button type="submit" class="subscribe-form__submit">ok</button>
+        </form>
+        <div class="footer__info">
+            <p class="footer__copyright">&copy;&nbsp;Road Club 2021</p>
+            <button type="sutton" class="switcher footer__switcher"></button>
+            <img class="footer__logo" src="./images/logo.svg" alt="Логотип" />
+        </div>
+    </footer>
+    <nav class="menu">
+        <button type="button" class="menu__close"></button>
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <a href="#highway" class="link menu__link">Покрытия и градиенты</a>
+            </li>
+            <li class="menu__list-item">
+                <a href="#bicycles" class="link menu__link">Велосипеды</a>
+            </li>
+            <li class="menu__list-item">
+                <a href="#workout" class="link menu__link">Тренировки</a>
+            </li>
+        </ul>
+        <button type="button" class="switcher menu__switcher"></button>
+    </nav>
+    <template id="bicycleTemplate">
+        <article class="bicycle-card">
+            <a target="_blank" class="link bicycle-card__link">
+                <div class="bicycle-card__image"></div>
+                <h3 class="bicycle-card__heading"></h3>
+            </a>
+        </article>
+    </template>
+    
+    <script src="./vendor/swiper-bundle.min.js"></script>
+    <script src="./scripts/bicycles.js"></script>
+    <script src="./scripts/hero.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/subscribeForm.js"></script>
+    <script src="./scripts/workout.js"></script>
+    <script src="./scripts/highwaySlider.js"></script>
+    <script src="./scripts/darkTheme.js"></script>
+</body>
+</html>

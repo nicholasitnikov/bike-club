@@ -1,0 +1,28 @@
+.workout {
+    padding: 210px $wideOffset 108px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundColor;
+    @include centered();
+}
+
+@include breakpoint('.workout', 1400px) {
+    padding: 210px $mediumOffset 108px;
+}
+
+@include breakpoint('.workout', 840px) {
+    padding: 100px $mediumOffset 60px;
+}
+
+@include breakpoint('.workout', 790px) {
+    position: relative;
+    padding: 40px $mediumOffset 60px;
+}
+
+@include topDividor('.workout', $mediumOffset, #E3E3E3, 790px);
+
+@include breakpoint('.workout', 480px) {
+    padding: 38px $smallOffset 60px;
+}
+
+@include topDividor('.workout', $smallOffset, #E3E3E3, 480px);

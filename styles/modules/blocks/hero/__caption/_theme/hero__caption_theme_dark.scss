@@ -1,0 +1,9 @@
+.hero__caption_theme_dark {
+    color: white;
+    transition: all .3s;
+}
+
+.hero__caption_theme_dark::after {
+    background: #707070;
+    transition: all .3s;
+}

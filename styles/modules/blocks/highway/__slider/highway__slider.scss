@@ -1,0 +1,9 @@
+@include breakpoint('.highway__slider', 790px) {
+    order: 3;
+    padding: 40px 0;
+}
+
+@include breakpoint('.highway__slider', 480px) {
+    order: 3;
+    padding: 40px 0 39px;
+}

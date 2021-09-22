@@ -1,0 +1,17 @@
+.subscribe-form__input_theme_dark {
+    border: 1px solid rgba(125, 125, 125, 0.5);
+    transition: all .3s;
+    color: white;
+}
+
+.subscribe-form__input_theme_dark::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.subscribe-form__input_theme_dark:hover::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-form__input_theme_dark:focus {
+    border: 1px solid rgba(125, 125, 125, 1)
+}

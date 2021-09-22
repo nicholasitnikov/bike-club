@@ -1,0 +1,8 @@
+.footer__switcher {
+    top: 2px;
+    right: 44px;
+}
+
+@include breakpoint('.footer__switcher', 860px) {
+    display: none;
+}

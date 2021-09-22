@@ -1,0 +1,10 @@
+.bicycles__slider {
+    width: 100%;
+    display: none;
+    padding-top: 20px;
+}
+
+@include breakpoint('.bicycles__slider', 749px) {
+    display: block;
+    height: calc(100vw - $mediumOffset * 2);
+}

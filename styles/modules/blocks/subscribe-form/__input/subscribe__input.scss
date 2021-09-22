@@ -1,0 +1,29 @@
+.subscribe-form__input {
+    min-width: 360px;
+    border: 1px solid #C7C7C780;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: $defaultFont;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 19px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-form__input:hover::placeholder {
+    color: #151515;
+}
+
+.subscribe-form__input:focus {
+    border: 1px solid #C7C7C7;
+}
+
+@include breakpoint('.subscribe-form__input', 480px) {
+    min-width: 100%;
+}

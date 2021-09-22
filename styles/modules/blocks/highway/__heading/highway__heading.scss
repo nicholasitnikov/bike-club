@@ -1,0 +1,13 @@
+.highway__heading {
+    max-width: 460px;
+    padding: 3px 0 44px;
+}
+
+@include breakpoint('.highway__heading', 790px) {
+    order: 1;
+    padding: 0;
+}
+
+@include breakpoint('.highway__heading', 480px) {
+    padding-top: 1px;
+}

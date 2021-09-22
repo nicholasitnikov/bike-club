@@ -1,0 +1,8 @@
+.bicycle-card__heading_theme_dark {
+    color: white;
+    transition: all .3s;
+}
+
+@include breakpoint('.bicycle-card__heading_theme_dark', 749px) {
+    color: #151515;
+}

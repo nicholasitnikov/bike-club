@@ -1,0 +1,9 @@
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@include breakpoint('.footer__info', 480px) {
+    align-items: center;
+}

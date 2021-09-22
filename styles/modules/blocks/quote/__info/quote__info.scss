@@ -1,0 +1,14 @@
+.quote__info {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@include breakpoint('.quote__info', 1400px) {
+    padding-left: 60px;
+}
+
+@include breakpoint('.quote__info', 790px) {
+    padding: 41px 0 0 0;
+}
